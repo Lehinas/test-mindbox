@@ -1,0 +1,71 @@
+.todoItem {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.checkboxContainer {
+    display: block;
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.checkboxContainer:hover .checkmark {
+    background-color: #f9f9f9;
+}
+
+.checkIcon {
+    width: 15px;
+    height: 15px;
+    color: #7fdb84;
+}
+
+.todoText {
+    font-size: 18px;
+    color: #4d4d4d;
+    flex-grow: 1;
+    word-break: break-word;
+}
+
+.completed {
+    color: #d9d9d9;
+    text-decoration: line-through;
+}
+
+.removeBtn {
+    border: none;
+    background: none;
+    color: #cc9a9a;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    line-height: 1;
+    padding: 0 5px;
+}
+
+.removeBtn:hover {
+    color: #af5b5e;
+}
