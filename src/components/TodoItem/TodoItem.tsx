@@ -1,14 +1,14 @@
-import React, {useState} from "react"
 import {useDispatch} from "react-redux"
 import {removeTodo, Todo, toggleTodo} from "../../store/todoSlice"
 import styles from "./TodoItem.module.css"
 import checkIcon from "../../assets/icons/check.svg"
+import {FC, useState} from "react"
 
 interface TodoItemProps {
 	todo: Todo;
 }
 
-const TodoItem: React.FC<TodoItemProps> = ({todo}) => {
+const TodoItem: FC<TodoItemProps> = ({todo}) => {
 	const dispatch = useDispatch()
 	const [isHovered, setIsHovered] = useState(false)
 

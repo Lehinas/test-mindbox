@@ -1,11 +1,11 @@
-import React, {useState} from "react"
+import {FC, useState} from "react"
 import {useDispatch, useSelector} from "react-redux"
 import {RootState} from "../../store/store"
 import {addTodo, clearCompleted, FilterType, setFilter} from "../../store/todoSlice"
 import TodoItem from "../TodoItem/TodoItem"
 import styles from "./TodoList.module.css"
 
-const TodoList: React.FC = () => {
+const TodoList: FC = () => {
 	const [newTodo, setNewTodo] = useState("")
 	const dispatch = useDispatch()
 	const todos = useSelector((state: RootState) => state.todos.todos)
